@@ -9,6 +9,8 @@ import Navbar from "../Components/Navbar";
 import Manfaat from "../Components/Manfaat";
 import MerchantBisnis from "../Components/merchantBisnis";
 import Regulasi from "../Components/Regulasi";
+import Satuan from "../Components/About/Satuan";
+import JenisGerai from "../Components/JenisGerai";
 
 const HEADER_HEIGHT = 96;
 const LandingPageUdin: React.FC = () => {
@@ -21,6 +23,7 @@ const LandingPageUdin: React.FC = () => {
   const tentangKamiRef = useRef<HTMLDivElement>(null);
   const manfaatRef = useRef<HTMLDivElement>(null);
   const regulasiRef = useRef<HTMLDivElement>(null);
+  const jenisGeraiRef = useRef<HTMLDivElement>(null);
   const bantuanRef = useRef<HTMLDivElement>(null);
   const MerchantBisnisRef = useRef<HTMLDivElement>(null);
 
@@ -43,6 +46,7 @@ const LandingPageUdin: React.FC = () => {
         Tentang: fiturRef,
         Model: tentangKamiRef,
         Manfaat: manfaatRef,
+        Jenis: jenisGeraiRef,
         Regulasi: regulasiRef,
         Bantuan: bantuanRef,
       }[page];
@@ -79,11 +83,18 @@ const LandingPageUdin: React.FC = () => {
             <div ref={fiturRef}>
               <Fitur />
             </div>
+
+            <div>
+              <Satuan />
+            </div>
             <div ref={tentangKamiRef}>
               <About />
             </div>
             <div ref={manfaatRef}>
               <Manfaat />
+            </div>
+            <div ref={jenisGeraiRef}>
+              <JenisGerai />
             </div>
             <div ref={regulasiRef}>
               <Regulasi />

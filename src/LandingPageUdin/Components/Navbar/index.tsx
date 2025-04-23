@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { IconClose, IconHamberger } from "../../Assets/Icons";
 
 interface NavbarProps {
@@ -8,9 +8,18 @@ interface NavbarProps {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const MENU_ITEMS = ["Beranda", "Tentang", "Model", "Manfaat", "Jenis", "Pertanyaan", "Regulasi", "Kontak"];
+const MENU_ITEMS = ["Beranda", "Tentang", "Model", "Manfaat", "Jenis", "Regulasi"];
 
 const Navbar: React.FC<NavbarProps> = ({ currentPage, isMenuOpen, handleMenuClick, setIsMenuOpen }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const renderMenuItems = () =>
     MENU_ITEMS.map((item) => (
       <div key={item} className={`px-2 border-b-2  ${currentPage === item ? "border-lime-500 w-[150px] lg:w-auto" : "border-transparent"} flex items-center gap-1 cursor-pointer`} onClick={() => handleMenuClick(item)}>
@@ -19,7 +28,11 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, isMenuOpen, handleMenuClic
     ));
 
   return (
-    <header className="w-full  lg:px-10 px-5 md:px-7 py-4 bg-white shadow top-0 left-0 z-50 flex items-center justify-between relative">
+    <header
+      className={`w-full lg:px-10 px-5 md:px-7 py-4 top-0 left-0 z-50 flex items-center justify-between fixed
+    transition-all duration-500 ease-in-out
+    ${isScrolled ? "bg-white/80 backdrop-blur-md shadow-md" : "bg-transparent"}
+    `}>
       <div className="text-black flex gap-3 items-center">
         <img className="h-12 z-50" src="/images/logo.png" alt="Logo" />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Satuan from "./Satuan";
+// import Satuan from "./Satuan";
 // import Promotion from "./Promotion";
 // import UdinPay from "./UdinPay";
 import Slider from "react-slick";
@@ -39,7 +39,9 @@ const About: React.FC = () => {
     <section className="max-w-[1440px] mx-auto  h-auto bg-white  mt-16">
       <div className="grid mb-[50px] rounded-[16px] bg-white lg:rounded-[32px] md:rounded-[10px]  md:h-[320px] lg:h-[550px] opacity-100 md:grid-cols-2 grid-cols-1 gap-10 items-center lg:mx-[56px] mx-[16px] md:mx-[32px]">
         <div className="font-poppins md:text-left pt-[20px] md:pt-0 ">
-          <h1 className="lg:text-[25px] font-poppins font-semibold text-[18px]  text-[#2C5C52] ">Tentang Koperasi Desa/Kelurahan Merah Putih</h1>
+          <div className="bg-black bg-opacity-10 p-2 rounded-lg text-center">
+            <h1 className="lg:text-[25px] font-poppins font-semibold text-[18px]  text-[#2C5C52] ">Tentang Koperasi Desa/Kelurahan Merah Putih</h1>
+          </div>
           <p className="lg:text-[18px] lg:mt-[20px] mt-[16px]  text-[14px] pe-[24px] text-justify ">
             Undang-Undang 1945 Pasal 33 menegaskan bahwa perekonomian Indonesia disusun atas usaha bersama yang didasarkan pada asas kekeluargaan. Presiden Republik Indonesia sangat mendukung segala upaya untuk menggerakkan koperasi di
             seluruh Indonesia, mencerminkan komitmen pemerintah dalam memperkuat ekonomi kerakyatan.
@@ -74,7 +76,7 @@ const About: React.FC = () => {
           </Slider>
         </div>
       </div>
-      <Satuan />
+      {/* <Satuan /> */}
       {/* <Promotion /> */}
       {/* <UdinPay /> */}
     </section>

@@ -44,8 +44,11 @@ const HeroUdin: React.FC<NavbarProps> = ({ handleMenuClick }) => {
       <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 text-center">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold max-w-4xl">
-          Hitung Mundur Peluncuran Koperasi <br /> Desa/Kelurahan Merah Putih <br /> 12 Juli 2025
+        <div className="flex justify-center mb-4">
+          <img src="/images/logo.png" className="w-28 h-28 " alt="" />
+        </div>
+        <h1 className="text-2xl md:text-4xl  font-semibold max-w-4xl">
+          Hitung Mundur Peluncuran <br /> Koperasi Desa/Kelurahan <br /> Merah Putih 12 Juli 2025
         </h1>
 
         <div className="flex gap-6 md:gap-8  mt-8 text-3xl md:text-5xl font-bold">
