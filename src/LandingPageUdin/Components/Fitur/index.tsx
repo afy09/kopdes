@@ -11,8 +11,20 @@ const Fitur = () => {
   return (
     <section className="bg-white mt-16 mb-10">
       <div className="   mt-10 px-5 xl:px-10 text-[#2C5C52] bg-[#2C5C52] rounded-xl mx-5 md:mx-10 p-10">
-        <div className="w-full flex justify-center">
-          <div className="text-lg text-[#2C5C52]  lg:text-2xl  font-bold text-center bg-white  px-5 py-2 rounded-lg ">Model Pembentukan</div>
+        <div className="w-full flex justify-center mb-6">
+          <div className="w-full max-w-3xl aspect-video">
+            <iframe
+              className="w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/zWjTbDW3sQM"
+              title="Distribusi INH selama Ramadan 1446H"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
+        </div>
+
+        <div className="w-full flex justify-center mt-8">
+          <div className="text-lg text-[#2C5C52]  lg:text-2xl  font-bold text-center bg-white  px-5 py-2 rounded-lg ">Model Pembentukan Kopdes Merah Putih</div>
         </div>
 
         <div className="flex flex-col xl:grid grid-cols-3 gap-4 justify-center mt-5">
