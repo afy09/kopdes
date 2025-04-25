@@ -20,6 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, isMenuOpen, handleMenuClic
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const renderMenuItems = () =>
     MENU_ITEMS.map((item) => (
       <div key={item} className={`px-2 border-b-2  ${currentPage === item ? "border-lime-500 w-[150px] lg:w-auto" : "border-transparent"} flex items-center gap-1 cursor-pointer`} onClick={() => handleMenuClick(item)}>

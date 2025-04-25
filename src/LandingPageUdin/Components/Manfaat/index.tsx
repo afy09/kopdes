@@ -24,13 +24,29 @@ const manfaatData = [
     image: "/images/gambar5.png",
     title: "Modernisasi Manajemen Sistem Perkoprasian",
   },
+  {
+    image: "/images/gambar6.png",
+    title: "Meningkatkan Inklusi Keuangan",
+  },
+  {
+    image: "/images/gambar7.png",
+    title: "Menekan Inflasi",
+  },
+  {
+    image: "/images/gambar4.png",
+    title: "Meningkatkan Inklusi Keuangan",
+  },
+  {
+    image: "/images/gambar3.png",
+    title: "Memberi Pelayanan Secara Sistematis dan Cepat",
+  },
 ];
 
 const ManfaatSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-[#F9FDF7] py-10 px-4 lg:px-20">
+    <section className="bg-[#F9FDF7] py-10 px-4 lg:px-20 mx-3">
       <div className="flex flex-col md:flex-row items-start gap-8">
         {/* Kiri - Teks */}
         <div className="md:w-1/2">
@@ -57,7 +73,7 @@ const ManfaatSlider = () => {
             {manfaatData.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className={`transition-all duration-500 bg-white rounded-2xl overflow-hidden ${index === activeIndex ? "shadow-md scale-100" : "shadow-md scale-100"}`}>
-                  <img src={item.image} alt={item.title} className="w-full h-[200px] md:h-[220px] lg:h-[250px] object-cover" />
+                  <img src={item.image} alt={item.title} className="w-full h-[220px] md:h-[220px] lg:h-[250px] object-cover" />
                   <div className="p-4">
                     <p className="text-[#005662] text-[14px] md:text-base font-medium">{item.title}</p>
                   </div>

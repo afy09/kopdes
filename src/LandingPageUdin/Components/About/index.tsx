@@ -36,11 +36,20 @@ const settings = {
 
 const About: React.FC = () => {
   return (
-    <section className="max-w-[1440px] mx-auto  h-auto bg-white  mt-16">
-      <div className="grid mb-[50px] rounded-[16px] bg-white lg:rounded-[32px] md:rounded-[10px]  md:h-[320px] lg:h-[550px] opacity-100 md:grid-cols-2 grid-cols-1 gap-10 items-center lg:mx-[56px] mx-[16px] md:mx-[32px]">
-        <div className="font-poppins md:text-left pt-[20px] md:pt-0 ">
-          <div className="bg-black bg-opacity-10 p-2 rounded-lg text-center">
+    <section className="max-w-[1440px] mx-auto  h-auto bg-white mt-[20px]  md:mt-[100px] z-50">
+      <div className="grid mb-[50px] rounded-[16px] bg-white lg:rounded-[32px] md:rounded-[10px] opacity-100 md:grid-cols-2 grid-cols-1 gap-10 items-center lg:mx-[56px] mx-[16px] md:mx-[32px]">
+        <div className="font-poppins md:text-left -pt-[20px] md:pt-0 ">
+          {/* <div className="flex justify-center">
+            <img src="/images/koptentang.png" alt="" className="object-contain w-40 h-40" />
+          </div> */}
+          <div className="bg-black bg-opacity-10 p-2 rounded-lg text-center hidden md:block">
             <h1 className="lg:text-[25px] font-poppins font-semibold text-[18px]  text-[#2C5C52] ">Tentang Koperasi Desa/Kelurahan Merah Putih</h1>
+          </div>
+
+          <div className="bg-black bg-opacity-10 p-2 rounded-lg text-center block md:hidden">
+            <h1 className="lg:text-[25px] font-poppins font-semibold text-[18px]  text-[#2C5C52] ">
+              Tentang Koperasi <br /> Desa/Kelurahan Merah Putih
+            </h1>
           </div>
           <p className="lg:text-[18px] lg:mt-[20px] mt-[16px]  text-[14px] pe-[24px] text-justify ">
             Undang-Undang 1945 Pasal 33 menegaskan bahwa perekonomian Indonesia disusun atas usaha bersama yang didasarkan pada asas kekeluargaan. Presiden Republik Indonesia sangat mendukung segala upaya untuk menggerakkan koperasi di
@@ -51,6 +60,11 @@ const About: React.FC = () => {
             Pembentukan Koperasi Desa/Kelurahan Merah Putih didorong oleh kebutuhan untuk meningkatkan kesejahteraan ekonomi masyarakat desa melalui pendekatan ekonomi kerakyatan yang berbasis pada prinsip gotong royong, kekeluargaan, dan
             saling membantu.
           </p>
+          <div className="flex justify-start">
+            <div>
+              <img src="/images/probowoabri.png" className="object-contain " alt="" />
+            </div>
+          </div>
 
           <p className="lg:text-[18px] lg:mt-[20px] mt-[16px]  text-[14px] pe-[24px] text-justify">
             Dalam retreat kepala daerah di Akmil Magelang pada 21-28 Februari 2025, Presiden Prabowo menekankan pentingnya pembentukan Koperasi Desa sebagai upaya untuk meningkatkan ketahanan pangan.

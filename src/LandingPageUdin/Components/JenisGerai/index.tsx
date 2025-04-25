@@ -1,34 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
+import { FaStore, FaClinicMedical, FaTruck, FaHandHoldingUsd, FaSnowflake, FaCapsules, FaBuilding } from "react-icons/fa";
+// import { IconBaseProps } from "react-icons";
 
-const geraiList = ["Gerai Sembako (Embrio KopHub)", "Apotek Desa", "Gerai Kantor Koperasi", "Gerai Klinik Desa", "Gerai Cold Storage/Cold Chain", "Logistik (Distribusi)", "Gerai Unit Usaha Simpan Pinjam (Embrio Kop Bank)"];
+// type GeraiItem = {
+//   label: string;
+//   icon: React.ElementType<IconBaseProps>; // Ganti IconType dengan React.ElementType
+// };
 
-const questions = [
-  {
-    q: "Apa itu Koperasi Desa/Kelurahan Merah Putih?",
-    a: "Koperasi Desa/Kelurahan Merah Putih adalah lembaga ekonomi beranggotakan masyarakat desa yang dibentuk untuk meningkatkan kesejahteraan melalui prinsip gotong royong, kekeluargaan, dan partisipasi bersama.",
-  },
-  {
-    q: "Apa tujuan utama pembentukan Kopdes/kel Merah Putih?",
-    a: "Tujuannya antara lain memperkuat perekonomian desa, meningkatkan nilai tukar petani, menekan inflasi, menciptakan lapangan kerja, dan meningkatkan inklusi keuangan.",
-  },
-  {
-    q: "Apa dasar hukum pembentukan koperasi ini?",
-    a: "Pembentukan koperasi didasarkan pada berbagai peraturan, seperti Undang-Undang Nomor 25 Tahun 1992 tentang Perkoperasian (yang telah diubah beberapa kali), Peraturan Pemerintah, Peraturan Presiden, dan peraturan menteri terkait.",
-  },
-
-  {
-    q: "Apa saja mekanisme pembentukan Kopdes/kel Merah Putih?",
-    a: "Mekanismenya meliputi tiga pendekatan: pendirian koperasi baru, pengembangan koperasi yang telah ada, dan revitalisasi koperasi tidak aktif.",
-  },
-];
+// const geraiList: GeraiItem[] = [
+//   { label: "Gerai Sembako (Embrio KopHub)", icon: FaStore },
+//   { label: "Apotek Desa", icon: FaCapsules },
+//   { label: "Gerai Kantor Koperasi", icon: FaBuilding },
+//   { label: "Gerai Klinik Desa", icon: FaClinicMedical },
+//   { label: "Gerai Cold Storage/Cold Chain", icon: FaSnowflake },
+//   { label: "Logistik (Distribusi)", icon: FaTruck },
+//   { label: "Gerai Unit Usaha Simpan Pinjam (Embrio Kop Bank)", icon: FaHandHoldingUsd },
+// ];
 
 const GeraiSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggle = (index: any) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
+  const Icon = FaStore as React.FC<React.SVGProps<SVGSVGElement>>;
+  const Icon2 = FaCapsules as React.FC<React.SVGProps<SVGSVGElement>>;
+  const Icon3 = FaBuilding as React.FC<React.SVGProps<SVGSVGElement>>;
+  const Icon4 = FaClinicMedical as React.FC<React.SVGProps<SVGSVGElement>>;
+  const Icon5 = FaSnowflake as React.FC<React.SVGProps<SVGSVGElement>>;
+  const Icon6 = FaTruck as React.FC<React.SVGProps<SVGSVGElement>>;
+  const Icon7 = FaHandHoldingUsd as React.FC<React.SVGProps<SVGSVGElement>>;
   return (
     <section className="relative w-full text-white">
       {/* Background Video */}
@@ -37,30 +33,54 @@ const GeraiSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-40" />
 
       {/* Content */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 py-16 px-4 md:px-12 max-w-7xl mx-auto">
-        {/* Right - Jenis Gerai */}
-        <div className="flex flex-col items-center md:items-start bg-white bg-opacity-15 px-5 py-6 rounded-lg">
-          <h2 className="text-xl md:text-3xl font-bold mb-6 text-center md:text-left">Jenis Gerai</h2>
-          <div className="flex flex-wrap justify-center md:justify-start gap-4">
-            {geraiList.map((item, idx) => (
-              <div key={idx} className="bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md backdrop-blur-sm">
-                {item}
-              </div>
-            ))}
+      <div className="relative z-10 flex justify-center py-16 px-4 md:px-12 max-w-7xl mx-auto">
+        <div className="bg-white bg-opacity-15 px-6 py-8 rounded-xl backdrop-blur-md text-center w-full max-w-3xl">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white">Jenis Gerai</h2>
+          <div className="grid grid-cols-2 gap-4 justify-items-center text-center">
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+              <span className="text-xl text-[#2C5C52]">
+                <Icon /> {/* Gunakan komponen Icon langsung */}
+              </span>
+              <span>Gerai Sembako</span>
+            </div>
+
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+              <span className="text-xl text-[#2C5C52]">
+                <Icon2 /> {/* Gunakan komponen Icon langsung */}
+              </span>
+              <span>Apotek Desa</span>
+            </div>
+
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+              <span className="text-xl text-[#2C5C52]">
+                <Icon3 /> {/* Gunakan komponen Icon langsung */}
+              </span>
+              <span>Gerai Kantor Koperasi</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+              <span className="text-xl text-[#2C5C52]">
+                <Icon4 /> {/* Gunakan komponen Icon langsung */}
+              </span>
+              <span>Gerai Klinik Desa</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+              <span className="text-xl text-[#2C5C52]">
+                <Icon5 /> {/* Gunakan komponen Icon langsung */}
+              </span>
+              <span>Gerai Cold Storage</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+              <span className="text-xl text-[#2C5C52]">
+                <Icon6 /> {/* Gunakan komponen Icon langsung */}
+              </span>
+              <span>Logistik ( Distribusi )</span>
+            </div>
           </div>
-        </div>
-        {/* Left - FAQ */}
-        <div className="bg-white bg-opacity-15 px-5 py-6 rounded-lg">
-          <h2 className="text-xl md:text-3xl font-bold mb-6">Pertanyaan Umum</h2>
-          <div className="space-y-4">
-            {questions.map((item, idx) => (
-              <div key={idx} className="bg-white bg-opacity-75 rounded-lg shadow-md text-gray-900">
-                <button onClick={() => toggle(idx)} className="w-full text-left px-4 py-3 font-semibold focus:outline-none">
-                  {item.q}
-                </button>
-                {openIndex === idx && <div className="px-4 pb-4 text-sm whitespace-pre-line">{item.a}</div>}
-              </div>
-            ))}
+          <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full mt-4 text-center">
+            <span className="text-xl text-[#2C5C52]">
+              <Icon7 /> {/* Gunakan komponen Icon langsung */}
+            </span>
+            <span>Gerai Unit Usaha Simpan Pinjam (Embrio Kop Bank)</span>
           </div>
         </div>
       </div>
