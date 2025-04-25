@@ -21,7 +21,7 @@ const Fitur = () => {
 
             <div className="relative z-10">
               <div className="text-2xl text-lime-500 mb-2 text-[14px] lg:text-[24px] flex justify-center">
-                <img src="/images/bangunkoprasi.jpg" className="w-20 h-20 rounded-lg" alt="" />
+                <img src="/images/bangunkoprasi.jpg" className="w-32 h-32 rounded-lg" alt="" />
                 {/* <Icon className="w-20 h-20" /> */}
               </div>
               <h1 className="font-poppins font-semibold text-[14px] lg:text-[20px]">Membangun Koperasi Baru</h1>
@@ -33,7 +33,7 @@ const Fitur = () => {
 
             <div className="relative z-10">
               <div className="text-2xl text-lime-500 mb-2 text-[14px] lg:text-[24px] flex justify-center">
-                <img src="/images/membangun.jpg" className="w-20 h-20 rounded-lg" alt="" />
+                <img src="/images/membangun.jpg" className="w-32 h-32 rounded-lg" alt="" />
                 {/* <Icon2 className="w-20 h-20" /> */}
               </div>
               <h1 className="font-poppins font-semibold text-[14px] lg:text-[20px]">Membangun Yang Sudah Ada</h1>
@@ -45,7 +45,7 @@ const Fitur = () => {
 
             <div className="relative z-10">
               <div className="text-2xl text-lime-500 mb-2 text-[14px] lg:text-[24px] flex justify-center">
-                <img src="/images/revitali.jpg" className="w-20 h-20 rounded-lg" alt="" />
+                <img src="/images/revitali.jpg" className="w-32 h-32 rounded-lg" alt="" />
                 {/* <Icon3 className="w-20 h-20" /> */}
               </div>
               <h1 className="font-poppins font-semibold text-[14px] lg:text-[20px]">Revitalisasi Koperasi</h1>

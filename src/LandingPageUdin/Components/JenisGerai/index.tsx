@@ -36,40 +36,40 @@ const GeraiSection = () => {
       <div className="relative z-10 flex justify-center py-16 px-4 md:px-12 max-w-7xl mx-auto">
         <div className="bg-white bg-opacity-15 px-6 py-8 rounded-xl backdrop-blur-md text-center w-full max-w-3xl">
           <h2 className="text-xl md:text-3xl font-bold mb-6 text-white">Jenis Gerai</h2>
-          <div className="grid grid-cols-2 gap-4 justify-items-center text-center">
-            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center text-center">
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full ">
               <span className="text-xl text-[#2C5C52]">
                 <Icon /> {/* Gunakan komponen Icon langsung */}
               </span>
               <span>Gerai Sembako</span>
             </div>
 
-            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full ">
               <span className="text-xl text-[#2C5C52]">
                 <Icon2 /> {/* Gunakan komponen Icon langsung */}
               </span>
               <span>Apotek Desa</span>
             </div>
 
-            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full ">
               <span className="text-xl text-[#2C5C52]">
                 <Icon3 /> {/* Gunakan komponen Icon langsung */}
               </span>
               <span>Gerai Kantor Koperasi</span>
             </div>
-            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full ">
               <span className="text-xl text-[#2C5C52]">
                 <Icon4 /> {/* Gunakan komponen Icon langsung */}
               </span>
               <span>Gerai Klinik Desa</span>
             </div>
-            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full ">
               <span className="text-xl text-[#2C5C52]">
                 <Icon5 /> {/* Gunakan komponen Icon langsung */}
               </span>
               <span>Gerai Cold Storage</span>
             </div>
-            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full max-w-sm">
+            <div className="flex items-center gap-3 bg-white bg-opacity-75 text-gray-800 px-4 py-2 rounded-xl text-sm md:text-base font-medium shadow-md w-full ">
               <span className="text-xl text-[#2C5C52]">
                 <Icon6 /> {/* Gunakan komponen Icon langsung */}
               </span>
@@ -80,7 +80,7 @@ const GeraiSection = () => {
             <span className="text-xl text-[#2C5C52]">
               <Icon7 /> {/* Gunakan komponen Icon langsung */}
             </span>
-            <span>Gerai Unit Usaha Simpan Pinjam (Embrio Kop Bank)</span>
+            <span>Gerai Unit Usaha Simpan Pinjam</span>
           </div>
         </div>
       </div>

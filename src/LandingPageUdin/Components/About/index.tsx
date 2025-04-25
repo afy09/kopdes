@@ -36,7 +36,7 @@ const settings = {
 
 const About: React.FC = () => {
   return (
-    <section className="max-w-[1440px] mx-auto  h-auto bg-white mt-[20px]  md:mt-[100px] z-50">
+    <section className="max-w-[1440px] mx-auto  h-auto bg-white mt-[40px]  md:mt-[100px] z-50">
       <div className="grid mb-[50px] rounded-[16px] bg-white lg:rounded-[32px] md:rounded-[10px] opacity-100 md:grid-cols-2 grid-cols-1 gap-10 items-center lg:mx-[56px] mx-[16px] md:mx-[32px]">
         <div className="font-poppins md:text-left -pt-[20px] md:pt-0 ">
           {/* <div className="flex justify-center">
@@ -60,9 +60,9 @@ const About: React.FC = () => {
             Pembentukan Koperasi Desa/Kelurahan Merah Putih didorong oleh kebutuhan untuk meningkatkan kesejahteraan ekonomi masyarakat desa melalui pendekatan ekonomi kerakyatan yang berbasis pada prinsip gotong royong, kekeluargaan, dan
             saling membantu.
           </p>
-          <div className="flex justify-start">
+          <div className="flex justify-start mt-3">
             <div>
-              <img src="/images/probowoabri.png" className="object-contain " alt="" />
+              <img src="/images/probowoabrifull.jpg" className="object-contain rounded-lg w-[95%]" alt="" />
             </div>
           </div>
 
