@@ -32,13 +32,10 @@ const HeroUdin: React.FC<NavbarProps> = ({ handleMenuClick }) => {
   return (
     <section className="relative w-full h-[100vh] overflow-hidden text-white">
       {/* Video Background */}
-      <video
+      <img
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-        autoPlay
-        loop
-        muted
-        playsInline
-        src="/video/videoalam.mp4" // taruh video di public/videos/
+        alt="Video Background"
+        src="/images/sawahbgatas.jpg" // taruh video di public/videos/
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
