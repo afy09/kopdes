@@ -28,7 +28,8 @@ const GeraiSection = () => {
   return (
     <section className="relative w-full text-white">
       {/* Background Video */}
-      <video className="absolute top-0 left-0 w-full h-full object-cover" src="/video/videoalam.mp4" autoPlay muted loop playsInline />
+      <img className="absolute top-0 left-0 w-full h-full object-cover" src="/images/dronesawah.jpg" alt="" />
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-40" />
 
