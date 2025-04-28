@@ -49,7 +49,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, isMenuOpen, handleMenuClic
         </button>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex gap-10">{renderMenuItems()}</nav>
+        <nav className="hidden lg:flex gap-10">
+          {renderMenuItems()}
+          <div className="px-6 py-2 bg-lime-500 rounded-lg flex justify-center items-center cursor-pointer" onClick={() => handleMenuClick("Download")}>
+            <div className="text-white text-lg">Masuk</div>
+          </div>
+        </nav>
 
         {/* Mobile Menu */}
         <div
@@ -57,7 +62,14 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, isMenuOpen, handleMenuClic
           style={{
             transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
           }}>
-          <div className="space-y-6 pl-[20px] md:pl-[30px] pt-[96px] pb-4 font-poppins text-[18px]">{renderMenuItems()}</div>
+          <div className="space-y-6 pl-[20px] md:pl-[30px] pt-[96px] pb-4 font-poppins text-[18px]">
+            {renderMenuItems()}
+            <div className="flex justify-start">
+              <div className="mx-[10px] px-6 ml-[-2px] py-2 bg-lime-500 text-white rounded-lg  mt-2 cursor-pointer" onClick={() => handleMenuClick("Download")}>
+                Masuk
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
