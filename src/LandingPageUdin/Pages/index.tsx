@@ -109,7 +109,7 @@ const LandingPageUdin: React.FC = () => {
             <div ref={bantuanRef}>
               <Help />
             </div>
-            <Footer />
+            <Footer handleMenuClick={handleMenuClick} />
           </>
         )}
       </section>
