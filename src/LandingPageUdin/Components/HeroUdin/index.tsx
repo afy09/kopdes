@@ -45,10 +45,10 @@ const HeroUdin: React.FC<NavbarProps> = ({ handleMenuClick }) => {
           <img src="/images/logo.png" className="w-28 h-28 " alt="" />
         </div>
         <h1 className="text-2xl md:text-4xl  font-semibold max-w-4xl">
-          Hitung Mundur Peluncuran <br /> Koperasi Desa/Kelurahan <br /> Merah Putih 12 Juli 2025
+          Koperasi Desa Merah Putih <br /> Kementerian Koperasi RI
         </h1>
 
-        <div className="flex gap-6 md:gap-8  mt-8 text-3xl md:text-5xl font-bold">
+        {/* <div className="flex gap-6 md:gap-8  mt-8 text-3xl md:text-5xl font-bold">
           <div className="flex flex-col items-center bg-white rounded-lg px-4 py-2 bg-opacity-30">
             <span>{countdown.days}</span>
             <span className="text-sm font-medium">Hari</span>
@@ -65,7 +65,7 @@ const HeroUdin: React.FC<NavbarProps> = ({ handleMenuClick }) => {
             <span>{countdown.seconds}</span>
             <span className="text-sm font-medium">Detik</span>
           </div>
-        </div>
+        </div> */}
 
         <button onClick={() => alert("Daftar Sekarang")} className="mt-10 bg-lime-500 hover:bg-lime-600 text-white font-semibold text-lg py-3 px-8 rounded-full">
           Daftar Sekarang

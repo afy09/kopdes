@@ -50,6 +50,14 @@ const Footer: React.FC<FooterProps> = ({ className, handleMenuClick }) => {
         </div>
 
         <div className="text-center my-6 text-black font-poppins text-[9px] md:text-base">
+          <p className="font-semibold">
+            CP : Yudi Cahya Prawira (
+            <a href="https://wa.me/6281384654484" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              0813-8465-4484
+            </a>
+            )
+          </p>
+
           <p>© 2025 Kementerian Koperasi Republik Indonesia | All Rights Reserved.</p>
         </div>
       </footer>

@@ -1,21 +1,5 @@
 import React from "react";
 import { FaStore, FaClinicMedical, FaTruck, FaHandHoldingUsd, FaSnowflake, FaCapsules, FaBuilding } from "react-icons/fa";
-// import { IconBaseProps } from "react-icons";
-
-// type GeraiItem = {
-//   label: string;
-//   icon: React.ElementType<IconBaseProps>; // Ganti IconType dengan React.ElementType
-// };
-
-// const geraiList: GeraiItem[] = [
-//   { label: "Gerai Sembako (Embrio KopHub)", icon: FaStore },
-//   { label: "Apotek Desa", icon: FaCapsules },
-//   { label: "Gerai Kantor Koperasi", icon: FaBuilding },
-//   { label: "Gerai Klinik Desa", icon: FaClinicMedical },
-//   { label: "Gerai Cold Storage/Cold Chain", icon: FaSnowflake },
-//   { label: "Logistik (Distribusi)", icon: FaTruck },
-//   { label: "Gerai Unit Usaha Simpan Pinjam (Embrio Kop Bank)", icon: FaHandHoldingUsd },
-// ];
 
 const GeraiSection = () => {
   const Icon = FaStore as React.FC<React.SVGProps<SVGSVGElement>>;

@@ -28,14 +28,12 @@ const LandingPageUdin: React.FC = () => {
   const PertanyaanRef = useRef<HTMLDivElement>(null);
   const bantuanRef = useRef<HTMLDivElement>(null);
   const MerchantBisnisRef = useRef<HTMLDivElement>(null);
+  const FootherRef = useRef<HTMLDivElement>(null);
 
   const handleMenuClick = (page: string) => {
     if (page === "Merchant Bisnis") {
       setCurrentPage(page);
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
 
@@ -52,15 +50,23 @@ const LandingPageUdin: React.FC = () => {
         Pertanyaan: PertanyaanRef,
         Regulasi: regulasiRef,
         Bantuan: bantuanRef,
+        Kontak: FootherRef,
       }[page];
 
-      if (targetRef?.current) {
+      if (page === "Kontak") {
+        // Scroll ke paling bawah halaman
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: "smooth",
+        });
+      } else if (targetRef?.current) {
+        // Scroll ke elemen biasa
         window.scrollTo({
           top: targetRef.current.offsetTop - HEADER_HEIGHT,
           behavior: "smooth",
         });
       }
-    }, 100); // Memberi waktu agar komponen bisa update sebelum scroll
+    }, 100);
 
     setIsMenuOpen(false);
   };
@@ -109,7 +115,9 @@ const LandingPageUdin: React.FC = () => {
             <div ref={bantuanRef}>
               <Help />
             </div>
-            <Footer handleMenuClick={handleMenuClick} />
+            <div ref={FootherRef}>
+              <Footer handleMenuClick={handleMenuClick} />
+            </div>
           </>
         )}
       </section>
