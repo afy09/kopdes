@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const PageUtama = () => {
-  const phoneNumber = "628123456789";
+  const phoneNumber = "6281384654484";
 
   const message = encodeURIComponent("Hallo, Saya tertarik membeli domain ini, mohon informasinya");
 
