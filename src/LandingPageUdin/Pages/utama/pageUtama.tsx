@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PageUtama = () => {
-  const whatsappLink = "https://wa.me/6281384654484";
+  const phoneNumber = "628123456789";
+
+  const message = encodeURIComponent("Hallo, Saya tertarik membeli domain ini, mohon informasinya");
+
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-600 via-green-500 to-green-700 px-4">
@@ -18,9 +23,9 @@ const PageUtama = () => {
         </p>
 
         {/* Button */}
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-xl transition duration-300 shadow-lg">
+        <Link to={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-xl transition duration-300 shadow-lg">
           Hubungi via WhatsApp
-        </a>
+        </Link>
 
         {/* Footer */}
         <p className="text-gray-400 text-sm mt-8">© {new Date().getFullYear()} Domain Owner</p>
