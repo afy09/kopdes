@@ -46,7 +46,7 @@ const PagePotensiBisnis = () => {
         <h1 className="text-4xl font-bold text-center mb-6">Potensi Bisnis Domain</h1>
 
         <p className="text-gray-600 text-center mb-12">
-          Memiliki domain <span className="font-semibold">kopdesmerahputih.id</span>
+          Memiliki domain <span className="font-bold text-black">kopdesmerahputih.id </span>
           memiliki potensi bisnis yang sangat strategis karena berkaitan langsung dengan program pemerintah Koperasi Desa Merah Putih yang berkembang mulai tahun 2025-2026.
         </p>
 

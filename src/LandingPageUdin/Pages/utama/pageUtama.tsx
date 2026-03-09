@@ -28,7 +28,7 @@ const PageUtama = () => {
           </a>
 
           <Link to="/potensi-bisnis" className="bg-gray-800 hover:bg-black text-white font-semibold px-8 py-3 rounded-xl transition shadow-lg">
-            Potensi Bisnis
+            Potensi Domain
           </Link>
         </div>
 
