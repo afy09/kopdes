@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Import halaman
 import LandingPageUdin from "./LandingPageUdin/Pages";
 import PageUtama from "./LandingPageUdin/Pages/utama/pageUtama";
+import PagePotensiBisnis from "./LandingPageUdin/Pages/potensi/pagePotensi";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <div>
         <Routes>
           <Route path="/" element={<PageUtama />} />
+          <Route path="/potensi-bisnis" element={<PagePotensiBisnis />} />
         </Routes>
       </div>
     </Router>
